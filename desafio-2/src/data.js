@@ -1,6 +1,6 @@
 const BASE_PATH = 'https://image.tmdb.org/t/p/original/';
 
-export default Movies = [
+ const Movies = [
   {
     title: 'Mortal Kombat',
     backgroundImg: `${BASE_PATH}w8BVC3qrCWCiTHRz4Rft12dtQF0.jpg`,
@@ -143,3 +143,4 @@ export default Movies = [
   },
 ]
 
+export default Movies;
