@@ -19,6 +19,7 @@ header{
   gap: 24px;
   align-items: center;
   justify-content: space-around;
+  z-index: 2;
 }
 
 .logo-pesquisa {
@@ -94,294 +95,38 @@ p{
 }
 
 .conteudo {
-  width: 937px;
+  max-width: 937px;
   display: flex;
   flex-direction: column;
   gap: 40px;
 }
 
-.cupom {
-  display: flex;
-  background-image: url(./assets/images/bg-promotion.svg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding: 16px 24px;
-  gap: 47px;
-  align-items: center;
-  position: relative;
-  font-family:'Quantico', sans-serif;
-  cursor: pointer;
+.header-mobile {
+  display: none;
 }
 
-h1 {
-  font-weight: normal;
-  font-size: 40px;
-  line-height: 150%;
-  color: #0F0915;
-  opacity: 0.8;
+@media (max-width: 800px) {
+  .header-mobile{
+    display: flex;
+    background-color:#0F1C26;
+    padding: 16px 30px;
+    align-items: center;
+    justify-content: space-between;
+  }
+  header{
+    display: none;
+  }
+
+  .main{
+    padding: 12px;
+  }
+
+  .conteudo{
+    width: 100%;
+  }
+  
+  .asside{
+    display: none;
+  }
+
 }
-
-.numero-cupom {
-  display: flex;
-  gap: 16px;
-  align-items: center;
-}
-
-.numero-cupom  p {
-  font-size: 16px;
-  line-height: 150%;
-  color: #0F0915;
-  opacity: 0.8;
-}
-
-.tempo-cupom {
-  display: flex;
-  flex-direction: column;
-  gap: 11px;
-}
-
-h3{
-
-  font-size: 24px;
-  line-height: 150%;
-  color: #0F0915;
-  opacity: 0.8;
-}
-
-.tempo {
-  display: flex;
-  gap: 10px;
-  align-items: center;
-}
-
-#dinheiro {
-  position: absolute;
-  right: 40px;
-  top: -40px;
-}
-
-.top-filmes {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-}
-
-.top-filmes h2 {
-  font-weight: bold;
-  font-size: 24px;
-  line-height: 150%;
-  color: #FDFDFD;
-}
-
-.lista-top-filmes {
-  display: flex;
-  gap: 24px;
-}
-
-.card-filme {
-  width: 168px;
-  height: 301px;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-color: #1d2226;
-  padding: 8px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-#estrela {
-  width: 20px;
-  height: 20px;
-}
-
-.nome-avaliacao{
-  display: flex;
-  justify-content: space-between;
-}
-
-h4{
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 150%;
-  color: #FDFDFD;
-}
-
-.avaliacao {
-  display: flex;
-  flex-wrap: nowrap;
-  align-items: center;
-  color: #FBCD6E;
-  font-weight: bold;
-  font-size: 12px;
-  line-height: 150%;
-}
-
-.card-filme button {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 3px;
-  padding: 4px 7px;
-  background-color: #A785ED;
-  color: #EEE6FF;
-  font-weight: bold;
-  font-size: 12px;
-  width: 90%;
-}
-
-.card-filme button:hover{
-  background: linear-gradient(0deg, rgba(46, 46, 46, 0.45), rgba(46, 46, 46, 0.45)), #A785ED;
-}
-
-.filmes {
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
-}
-
-.filtro-buttons {
-  display: flex;
-  gap: 24px;
-}
-
-.filtro-buttons .button-selecionado {
-  background: rgba(225, 131, 200, 0.2);
-  border: 2px solid #E183C8;
-  color: #E183C8;
-  font-weight: 600;
-  opacity: 1;
-}
-
-.filtro-buttons button {
-  width: 168px;
-  text-align: center;
-  font-weight: 600;
-  border: 2px solid #FFFFFF;
-  color: #FFFFFF;
-  opacity: 0.2;
-  padding: 8px;
-  font-family: 'Open Sans', sans-serif;
-}
-
-.filtro-buttons button:hover{
-  border: 2px solid #E183C8;
-  color: #E183C8;
-  opacity: 1;
-}
-
-.lista-todos-filmes {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 24px;
-}
-
-.asside-sacola{
-  position: fixed;
-}
-
-.sacola {
-  display: flex;
-  background: linear-gradient(0deg, #A785ED, #A785ED), #C4C4C4;
-  padding: 14px 93px;
-  color: #FDFDFD;
-  align-items: center;
-}
-
-.conteudo-sacola{
-  display: flex;
-  flex-direction: column;
-  gap: 6px;
-  padding: 32px 16px 24px 16px;
-  background: rgba(0, 0, 0, 0.2);
-  color: #FDFDFD;
-  align-items: center;
-}
-
-.conteudo-sacola p {
-  opacity: 0.8;
-  font-weight: 500;
-  margin-bottom: 13px;
-}
-
-.cupom-sacola{
-  width: 100%;
-}
-
-label{
-  font-size: 12px;
-  color: #FDFDFD;
-}
-
-.input-cupom {
-  background: #0B1217;
-  display: flex;
-  justify-content: space-between;
-  padding: 10px;
-  width: 100%;
-}
-
-.filme-sacola {
-  padding: 10px 0;
-  display: flex;
-  width: 100%;
-  justify-content: space-between;
-}
-
-.imagem-valor{
-  display: flex;
-  gap: 13px;
-}
-
-#imagem-filme{
-  width: 43px;
-  height: 67px;
-}
-
-.nome-valor{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  color: #FDFDFD;
-  font-weight: 500;
-}
-
-.quantidade {
-  display: flex;
-  gap: 15px;
-  align-items: center;
-}
-
-.quantidade p{
-  padding-top: 10px;
-}
-
-.quantidade button {
-  height: 24px;
-}
-
-.quantidade button:hover{
-  background: linear-gradient(0deg, rgba(107, 107, 107, 0.37), rgba(107, 107, 107, 0.37));
-}
-
-.botao-confirmar-dados {
-  width: 100%;
-}
-
-.conteudo-sacola .botao-confirmar-dados button {
-  display: flex;
-  justify-content: space-between;
-  width: 88%;
-  padding: 16px;
-  margin-top: 24px;
-  background-color: #E25EBF;
-  font-weight: bold;
-  font-size: 16px;
-  color: #FDFDFD;
-  font-family: 'Manrope', sans-serif;
-}
-
-.conteudo-sacola .botao-confirmar-dados button:hover {
-  background: linear-gradient(0deg, rgba(225, 123, 123, 0.45), rgba(225, 123, 123, 0.45)), #FFB6EB;
-  box-shadow: 0px 16px 24px -12px rgba(226, 94, 191, 0.16);
-}
-

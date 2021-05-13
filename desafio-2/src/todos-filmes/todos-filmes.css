@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Open+Sans:wght@400;600&family=Quantico:wght@400;700&display=swap");
+
+.filmes {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .filmes h2 {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 150%;
+    color: #FDFDFD;
+  }
+  
+  .filtro-buttons {
+    display: flex;
+    gap: 24px;
+  }
+  
+  .filtro-buttons .button-selecionado {
+    background: rgba(225, 131, 200, 0.2);
+    border: 2px solid #E183C8;
+    color: #E183C8;
+    font-weight: 600;
+    opacity: 1;
+  }
+  
+  .filtro-buttons button {
+    width: 168px;
+    text-align: center;
+    font-weight: 600;
+    border: 2px solid #FFFFFF;
+    color: #FFFFFF;
+    opacity: 0.2;
+    padding: 8px;
+    font-family: 'Open Sans', sans-serif;
+  }
+  
+  .filtro-buttons button:hover{
+    border: 2px solid #E183C8;
+    color: #E183C8;
+    opacity: 1;
+  }
+  
+  .lista-todos-filmes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+  }
+
+.card-filme {
+    width: 168px;
+    height: 301px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  #estrela {
+    width: 20px;
+    height: 20px;
+  }
+  
+  .nome-avaliacao{
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  h4{
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 150%;
+    color: #FDFDFD;
+  }
+  
+  .avaliacao {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    color: #FBCD6E;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 150%;
+  }
+  
+  .card-filme button {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3px;
+    padding: 4px 7px;
+    background-color: #A785ED;
+    color: #EEE6FF;
+    font-weight: bold;
+    font-size: 12px;
+    width: 90%;
+  }
+  
+  .card-filme button:hover{
+    background: linear-gradient(0deg, rgba(46, 46, 46, 0.45), rgba(46, 46, 46, 0.45)), #A785ED;
+  }
+
+  @media (max-width: 800px) {
+      
+    .filtro-buttons {
+        overflow-x: auto;
+    }
+
+    .filtro-buttons button{
+        padding: 0 20px;
+    }
+
+    .lista-todos-filmes{
+        gap: 10px;
+    }
+
+    .card-filme{
+        min-width: 150px;
+    }
+
+}
