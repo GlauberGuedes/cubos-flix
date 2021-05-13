@@ -1,12 +1,12 @@
-import Cupom from "./cupom/cupom";
-import Header from "./header/header";
-import TopFilmes from "./top-filmes/top-filmes";
-import TodosFilmes from "./todos-filmes/todos-filmes";
-import AssideSacola from "./asside-sacola/asside-sacola";
-import HeaderMobile from "./header-mobile/header-mobile";
+import Cupom from "./componentes/cupom/cupom";
+import Header from "./componentes/header/header";
+import TopFilmes from "./componentes/top-filmes/top-filmes";
+import TodosFilmes from "./componentes/todos-filmes/todos-filmes";
+import AssideSacola from "./componentes/asside-sacola/asside-sacola";
+import HeaderMobile from "./componentes/header-mobile/header-mobile";
 import Movies from "./data";
 import "./App.css";
-import { useEffect, useState, useRef } from "react";
+import { useEffect, useState } from "react";
 
 function App() {
   const [todosOsFilmes, setTodosOsFilmes] = useState(Movies);
@@ -14,7 +14,6 @@ function App() {
   const [cupomExpirado, setCupomExpirado] = useState(
     localStorage.getItem("cupomUsado") ?? false
   );
-
   const [adicionarFilmeSacola, setAdicionarFilmeSacola] = useState(
     JSON.parse(localStorage.getItem("filme")) ?? []
   );

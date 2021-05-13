@@ -1,20 +1,51 @@
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Open+Sans:wght@400;600&family=Quantico:wght@400;700&display=swap");
 
-.top-filmes {
+.filmes {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 24px;
 }
 
-.top-filmes h2 {
+.filmes h2 {
   font-weight: bold;
   font-size: 24px;
   line-height: 150%;
   color: #fdfdfd;
 }
 
-.lista-top-filmes {
+.filtro-buttons {
   display: flex;
+  gap: 24px;
+}
+
+.filtro-buttons .button-selecionado {
+  background: rgba(225, 131, 200, 0.2);
+  border: 2px solid #e183c8;
+  color: #e183c8;
+  font-weight: 600;
+  opacity: 1;
+}
+
+.filtro-buttons button {
+  width: 168px;
+  text-align: center;
+  font-weight: 600;
+  border: 2px solid #ffffff;
+  color: #ffffff;
+  opacity: 0.2;
+  padding: 8px;
+  font-family: "Open Sans", sans-serif;
+}
+
+.filtro-buttons button:hover {
+  border: 2px solid #e183c8;
+  color: #e183c8;
+  opacity: 1;
+}
+
+.lista-todos-filmes {
+  display: flex;
+  flex-wrap: wrap;
   gap: 24px;
 }
 
@@ -27,6 +58,10 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+
+.card-filme svg {
+  cursor: pointer;
 }
 
 .nome-avaliacao {
@@ -73,9 +108,18 @@ h4 {
 }
 
 @media (max-width: 815px) {
-  .lista-top-filmes {
+  .filtro-buttons {
     overflow-x: auto;
   }
+
+  .filtro-buttons button {
+    padding: 0 20px;
+  }
+
+  .lista-todos-filmes {
+    gap: 10px;
+  }
+
   .card-filme {
     min-width: 150px;
   }
