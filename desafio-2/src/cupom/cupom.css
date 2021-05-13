@@ -1,65 +1,63 @@
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Open+Sans:wght@400;600&family=Quantico:wght@400;700&display=swap");
 
 .cupom {
-    display: flex;
-    background-image: url(../assets/images/bg-promotion.svg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding: 16px 24px;
-    gap: 47px;
-    align-items: center;
-    font-family:'Quantico', sans-serif;
-    cursor: pointer;
-  }
-  
-  h1 {
-    font-weight: normal;
-    font-size: 40px;
-    line-height: 150%;
-    color: #0F0915;
-    opacity: 0.8;
-  }
-  
-  .numero-cupom {
-    display: flex;
-    gap: 16px;
-    align-items: center;
-  }
-  
-  .numero-cupom  p {
-    font-size: 16px;
-    line-height: 150%;
-    color: #0F0915;
-    opacity: 0.8;
-  }
-  
-  .tempo-cupom {
-    display: flex;
-    flex-direction: column;
-    gap: 11px;
-  }
-  
-  h3{
-  
-    font-size: 24px;
-    line-height: 150%;
-    color: #0F0915;
-    opacity: 0.8;
-  }
-  
-  .tempo {
-    display: flex;
-    gap: 10px;
-    align-items: center;
-  }
-  
-  #dinheiro {
-    margin-top: -70px;
-    margin-left: 30px;
-  }
+  display: flex;
+  background-image: url(../assets/images/bg-promotion.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 16px 24px;
+  gap: 47px;
+  align-items: center;
+  font-family: "Quantico", sans-serif;
+  cursor: pointer;
+}
 
-  @media (max-width: 800px) {
+h1 {
+  font-weight: normal;
+  font-size: 40px;
+  line-height: 150%;
+  color: #0f0915;
+  opacity: 0.8;
+}
 
+.numero-cupom {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.numero-cupom p {
+  font-size: 16px;
+  line-height: 150%;
+  color: #0f0915;
+  opacity: 0.8;
+}
+
+.tempo-cupom {
+  display: flex;
+  flex-direction: column;
+  gap: 11px;
+}
+
+h3 {
+  font-size: 24px;
+  line-height: 150%;
+  color: #0f0915;
+  opacity: 0.8;
+}
+
+.tempo {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+#dinheiro {
+  margin-top: -70px;
+  margin-left: 30px;
+}
+
+@media (max-width: 815px) {
   .cupom {
     width: 100%;
     background-image: url("../assets/images/mobile-bg-promotion.svg");
@@ -71,7 +69,7 @@
     position: relative;
   }
 
-  h1{
+  h1 {
     font-size: 32px;
   }
 
@@ -80,5 +78,4 @@
     bottom: 10px;
     left: 60px;
   }
-  
 }

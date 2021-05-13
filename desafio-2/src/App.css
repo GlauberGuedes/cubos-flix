@@ -9,23 +9,7 @@
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  font-family: 'Manrope', sans-serif;
-}
-
-header{
-  display: flex;
-  background-color:#0F1C26;
-  padding: 16px 0;
-  gap: 24px;
-  align-items: center;
-  justify-content: space-around;
-  z-index: 2;
-}
-
-.logo-pesquisa {
-  display: flex;
-  gap: 24px;
-  align-items: center;
+  font-family: "Manrope", sans-serif;
 }
 
 input {
@@ -33,55 +17,27 @@ input {
 }
 
 input:hover {
-  border: 1px solid #8C8C8C;
+  border: 1px solid #8c8c8c;
 }
 
-input:focus{
-  border: 1px solid #FDFDFD;
+input:focus {
+  border: 1px solid #fdfdfd;
   outline: transparent;
 }
 
-button{
+button {
   all: unset;
   cursor: pointer;
 }
 
-.pesquisar {
-  padding:  0 16px;
-  width: 456px;
-  background: #171B1E;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  min-height: 56px;
-}
-
-.pesquisar input {
-  color: #FDFDFD80;
+p {
+  color: #fdfdfd;
   font-weight: 500;
   font-size: 16px;
-  line-height: 150%;
-  width: 80%;
-}
-
-.pesquisar input:placeholder-shown {
-  color: #FDFDFD80;
-}
-
-p{
-  color:#FDFDFD;
-  font-weight: 500;
-  font-size: 16px;
-}
-
-.favorito {
-  display: flex;
-  gap: 8px;
-  align-items: center;
 }
 
 .main {
-  background: #1D2226;
+  background: #1d2226;
   display: flex;
   gap: 60px;
   padding: 24px 24px 24px 96px;
@@ -101,32 +57,27 @@ p{
   gap: 40px;
 }
 
-.header-mobile {
-  display: none;
-}
-
-@media (max-width: 800px) {
-  .header-mobile{
-    display: flex;
-    background-color:#0F1C26;
-    padding: 16px 30px;
-    align-items: center;
-    justify-content: space-between;
-  }
-  header{
-    display: none;
-  }
-
-  .main{
+@media (max-width: 815px) {
+  .main {
     padding: 12px;
   }
 
-  .conteudo{
+  .conteudo {
     width: 100%;
   }
-  
-  .asside{
+
+  .asside {
     display: none;
   }
 
+  .asside {
+    position: fixed;
+    top: 75px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 3;
+    background: #1d2226;
+    padding: 40px 24px;
+  }
 }

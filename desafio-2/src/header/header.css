@@ -1,0 +1,49 @@
+header {
+  display: flex;
+  background-color: #0f1c26;
+  padding: 16px 0;
+  gap: 24px;
+  align-items: center;
+  justify-content: space-around;
+  z-index: 2;
+}
+
+.logo-pesquisa {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+
+.pesquisar {
+  padding: 0 16px;
+  width: 456px;
+  background: #171b1e;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 56px;
+}
+
+.pesquisar input {
+  color: #fdfdfd80;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  width: 80%;
+}
+
+.pesquisar input:placeholder-shown {
+  color: #fdfdfd80;
+}
+
+.favorito {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+@media (max-width: 815px) {
+  header {
+    display: none;
+  }
+}
