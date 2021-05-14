@@ -9,9 +9,10 @@
 .sacola {
   display: flex;
   background: linear-gradient(0deg, #a785ed, #a785ed), #c4c4c4;
-  padding: 14px 93px;
+  padding: 5px 93px;
   color: #fdfdfd;
   align-items: center;
+  justify-content: center;
 }
 
 .conteudo-sacola {

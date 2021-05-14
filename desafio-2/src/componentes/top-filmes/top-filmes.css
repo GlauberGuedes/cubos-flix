@@ -16,6 +16,7 @@
 .lista-top-filmes {
   display: flex;
   gap: 24px;
+  padding: 5px;
 }
 
 .card-filme {
@@ -27,6 +28,8 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  box-shadow: 0 0 5px black;
+  border-radius: 5px;
 }
 
 .card-filme svg {
@@ -49,6 +52,7 @@ h4 {
   display: flex;
   flex-wrap: nowrap;
   align-items: center;
+  align-self: flex-end;
   color: #fbcd6e;
   font-weight: bold;
   font-size: 12px;
