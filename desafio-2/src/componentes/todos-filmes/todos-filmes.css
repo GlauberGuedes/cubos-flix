@@ -111,6 +111,15 @@ h4 {
     #a785ed;
 }
 
+@media (min-width: 816px) and (max-width: 1100px) {
+  .card-filme {
+    width: 165px;
+  }
+  .filtro-buttons button {
+    max-width: 90.8px;
+  }
+}
+
 @media (max-width: 815px) {
 
   .pesquisar-filmes {

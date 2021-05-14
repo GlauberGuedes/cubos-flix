@@ -76,6 +76,15 @@ h4 {
     #a785ed;
 }
 
+@media (min-width: 816px) and (max-width: 1100px) {
+  .lista-top-filmes {
+    overflow-x: auto;
+  }
+  .card-filme {
+    min-width: 150px;
+  }
+}
+
 @media (max-width: 815px) {
   .lista-top-filmes {
     overflow-x: auto;
