@@ -27,6 +27,12 @@ function App() {
     localStorage.getItem("cupom") ?? false
   );
   const [abrirSacolaMobile, setAbrirSacolaMobile] = useState(false);
+  const [nomeInput, setNomeInput] = useState("");
+
+  function filtrarPorNomeInput(e) {
+    if (e.key !== "Enter") return;
+    setNomeFiltroInput(nomeInput);
+  }
 
   function adicionarFilme(filme) {
     const jaTemOFilme = adicionarFilmeSacola.find(
@@ -120,14 +126,20 @@ function App() {
 
   return (
     <div className="container">
-      <HeaderMobile setAbrirSacolaMobile={setAbrirSacolaMobile} />
-      <Header setNomeFiltroInput={setNomeFiltroInput} />
+      <HeaderMobile setAbrirSacolaMobile={setAbrirSacolaMobile}/>
+      <Header 
+      setNomeFiltroInput={setNomeFiltroInput}
+      nomeInput={nomeInput}
+      setNomeInput={setNomeInput}
+      filtrarPorNomeInput={filtrarPorNomeInput}
+      />
       <div className="main">
         <div className="conteudo">
           <Cupom
             setCupomAplicado={setCupomAplicado}
             cupomAplicado={cupomAplicado}
             setCupomExpirado={setCupomExpirado}
+            cupomExpirado={cupomExpirado}
           />
           <TopFilmes
             adicionarFilme={adicionarFilme}
@@ -139,6 +151,10 @@ function App() {
             nomeFiltroInput={nomeFiltroInput}
             todosOsFilmes={todosOsFilmes}
             setTodosOsFilmes={setTodosOsFilmes}
+            setNomeFiltroInput={setNomeFiltroInput}
+            nomeInput={nomeInput}
+            setNomeInput={setNomeInput}
+            filtrarPorNomeInput={filtrarPorNomeInput}
           />
         </div>
         <div
@@ -154,6 +170,7 @@ function App() {
             setAdicionarFilmeSacola={setAdicionarFilmeSacola}
             setCupomAplicado={setCupomAplicado}
             valorTotal={valorTotal}
+            cupomExpirado={cupomExpirado}
           />
         </div>
       </div>

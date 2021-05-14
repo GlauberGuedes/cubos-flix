@@ -13,19 +13,21 @@ export default function HeaderMobile({ setAbrirSacolaMobile }) {
 
   return (
     <div className="header-mobile">
-      <img src={logo} />
-      <img
+      <div className="menu-logo">
+        <img src={logo} />
+        <img
         src={menu}
         onClick={() => {
           setAbrirMenu(true);
           setAbrirSacolaMobile(false);
-        }}
-      />
+          }}
+        />
+      </div>
       <div className="menu-aberto" style={{ display: abrirMenu ? "" : "none" }}>
         <div className="informacoes-menu">
           <img id="fechar" src={fechar} onClick={() => setAbrirMenu(false)} />
           <div className="favorito">
-            <img src={fotoPerfil} width="56px" height="56px" />
+            <img id="perfil" src={fotoPerfil} width="56px" height="56px" />
             <p>Bem vindo Glauber</p>
           </div>
           <div className="favorito">

@@ -6,15 +6,13 @@ import logo from "../assets/images/logo.svg";
 import { useState} from "react";
 
 export default function Header({
-  setNomeFiltroInput
+  setNomeFiltroInput,
+  nomeInput,
+  setNomeInput,
+  filtrarPorNomeInput,
 }) {
 
-  const [nomeInput, setNomeInput] = useState("");
-
-  function filtrarPorNomeInput(e) {
-    if (e.key !== "Enter") return;
-    setNomeFiltroInput(nomeInput);
-  }
+  
 
   return (
     <header>
@@ -67,7 +65,7 @@ export default function Header({
       </div>
       <div className="favorito">
         <p>Bem vindo Glauber</p>
-        <img src={fotoPerfil} width="56px" height="56px" />
+        <img id="perfil" src={fotoPerfil} width="56px" height="56px" />
       </div>
     </header>
   );

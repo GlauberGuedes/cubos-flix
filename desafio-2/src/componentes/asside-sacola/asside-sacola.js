@@ -5,21 +5,25 @@ import lixeira from "../assets/images/trash-icon.svg";
 import sacolaImg from "../assets/images/bag-icon.svg";
 import figuraSacola from "../assets/images/person-illustration.svg";
 import cupomSacola from "../assets/images/coupon-icon.svg";
+import {useState} from "react";
 
 export default function AssideSacola({
   setCupomAplicado,
   sacola,
   adicionarFilmeSacola,
   adicionarFilme,
-  inputDesconto,
   valorTotal,
   cupomAplicado,
   setValorTotal,
   setAdicionarFilmeSacola,
+  cupomExpirado
 }) {
+
+  const [botaoValorAtivado, setBotaoValorAtivado] = useState(false);
+
   function inputDesconto(e) {
     if (e.key !== "Enter") return;
-    if (e.target.value === "htmlnaoelinguagem" && !cupomAplicado) {
+    if (e.target.value === "htmlnaoelinguagem" && !cupomAplicado && !cupomExpirado) {
       setCupomAplicado(true);
       const localCupom = true;
       localStorage.setItem("cupom", localCupom);
@@ -120,7 +124,7 @@ export default function AssideSacola({
           className="botao-confirmar-dados"
           style={{ display: sacola ? "" : "none" }}
         >
-          <button>
+          <button onClick={() => setBotaoValorAtivado(!botaoValorAtivado)} className={botaoValorAtivado ? "botao-ativado" : ""}>
             Confirme seus dados <span>R$ {valorTotal.toFixed(2)}</span>
           </button>
         </div>

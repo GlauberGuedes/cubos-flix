@@ -6,6 +6,10 @@
   gap: 24px;
 }
 
+.pesquisar-filmes {
+  display: none;
+}
+
 .filmes h2 {
   font-weight: bold;
   font-size: 24px;
@@ -108,12 +112,37 @@ h4 {
 }
 
 @media (max-width: 815px) {
+
+  .pesquisar-filmes {
+    display: flex;
+    padding: 0 16px;
+    width: 350px;
+    background: #171b1e;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 56px;
+  }
+  
+  .pesquisar-filmes input {
+    color: #fdfdfd80;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    width: 80%;
+  }
+  
+  .pesquisar input:placeholder-shown {
+    color: #fdfdfd80;
+  }
+
   .filtro-buttons {
     overflow-x: auto;
   }
 
   .filtro-buttons button {
     padding: 0 20px;
+    min-width: 104px;
   }
 
   .lista-todos-filmes {

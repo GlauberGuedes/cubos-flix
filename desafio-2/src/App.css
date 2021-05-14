@@ -5,6 +5,21 @@
   margin: 0;
 }
 
+::-webkit-scrollbar-track {
+  background-color: #585151;
+  border-radius: 5px;
+}
+::-webkit-scrollbar {
+  width: 6px;
+  background: #585151;
+  border-radius: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background: #131212;
+  border-radius: 5px;
+}
+
+
 .container {
   min-height: 100vh;
   display: flex;
@@ -41,7 +56,7 @@ p {
   display: flex;
   gap: 60px;
   padding: 24px 24px 24px 96px;
-  min-height: 100vh;
+  min-height: 100%;
 }
 
 @media (max-width: 1375px) {
@@ -60,6 +75,7 @@ p {
 @media (max-width: 815px) {
   .main {
     padding: 12px;
+    margin-top: 76px;
   }
 
   .conteudo {
@@ -78,6 +94,6 @@ p {
     right: 0;
     z-index: 3;
     background: #1d2226;
-    padding: 40px 24px;
+    padding: 40px 30px;
   }
 }

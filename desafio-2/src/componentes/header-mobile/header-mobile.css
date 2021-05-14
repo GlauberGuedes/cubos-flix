@@ -2,6 +2,10 @@
   display: none;
 }
 
+#perfil {
+  border-radius: 50%;
+}
+
 .favorito {
   display: flex;
   gap: 8px;
@@ -12,9 +16,18 @@
   .header-mobile {
     display: flex;
     background-color: #0f1c26;
-    padding: 16px 30px;
-    align-items: center;
+    padding: 18px 30px;
+    position: fixed;
+    width: 100%;
+    z-index: 4;
+  }
+
+  .menu-logo{
+    display: flex;
+    width: 100%;
+    position: sticky;
     justify-content: space-between;
+    align-items: center;
   }
 
   .menu-aberto {

@@ -42,6 +42,10 @@ header {
   align-items: center;
 }
 
+#perfil {
+  border-radius: 50%;
+}
+
 @media (max-width: 815px) {
   header {
     display: none;

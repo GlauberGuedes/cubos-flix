@@ -8,6 +8,7 @@ export default function CupomDesconto({
   setCupomAplicado,
   cupomAplicado,
   setCupomExpirado,
+  cupomExpirado
 }) {
   const [tempoCupom, setTempoCupom] = useState(300);
   const intervalId = useRef();
@@ -18,6 +19,7 @@ export default function CupomDesconto({
   useEffect(() => {
     if (tempoCupom === 0) {
       setCupomExpirado(true);
+      localStorage.setItem("cupomUsado", true);
     }
     if (tempoCupom !== 0) {
       intervalId.current = setInterval(() => {
@@ -41,7 +43,7 @@ export default function CupomDesconto({
         atualizarLocalStorage();
       }}
       className="cupom"
-      style={{ display: `${cupomAplicado || tempoCupom === 0 ? "none" : ""}` }}
+      style={{ display: `${cupomExpirado || cupomAplicado || tempoCupom  === 0 ? "none" : ""}` }}
     >
       <div className="titulo-cupom">
         <h1>APROVEITE AGORA</h1>
