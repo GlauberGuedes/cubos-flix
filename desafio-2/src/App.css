@@ -11,14 +11,12 @@
 }
 ::-webkit-scrollbar {
   width: 6px;
-  background: #585151;
-  border-radius: 8px;
+  background: #585151; 
 }
 ::-webkit-scrollbar-thumb {
   background: #131212;
   border-radius: 5px;
 }
-
 
 .container {
   min-height: 100vh;

@@ -96,17 +96,17 @@ export default function TodosFilmes({
                 cy="6.84448"
                 r="5.99243"
                 stroke="white"
-                stroke-width="1.00001"
-                stroke-linecap="round"
-                stroke-linejoin="round"
+                strokeWidth="1.00001"
+                strokeLinecap="round"
+                strokeLinejoin="round"
               />
               <path
                 opacity="0.4"
                 d="M11.0122 11.3232L13.3616 13.6665"
                 stroke="white"
-                stroke-width="1.00001"
-                stroke-linecap="round"
-                stroke-linejoin="round"
+                strokeWidth="1.00001"
+                strokeLinecap="round"
+                strokeLinejoin="round"
               />
             </svg>
           </button>
@@ -159,6 +159,7 @@ export default function TodosFilmes({
         {todosOsFilmesFiltrado.map((filme) => {
           return (
             <div
+            key={todosOsFilmesFiltrado.indexOf(filme)}
               className="card-filme"
               style={{
                 background: `linear-gradient(rgba(0, 0, 0, 0.3) 100%, rgba(0, 0, 0, 0.3) 100%), url(${filme.backgroundImg}) center center / cover no-repeat`,
@@ -176,7 +177,7 @@ export default function TodosFilmes({
                   fill={filme.isStarred ? "#FFFFFF" : ""}
                   d="M10 2L11.7961 7.52786H17.6085L12.9062 10.9443L14.7023 16.4721L10 13.0557L5.29772 16.4721L7.09383 10.9443L2.39155 7.52786H8.20389L10 2Z"
                   stroke="white"
-                  stroke-opacity="0.83"
+                  strokeOpacity="0.83"
                 />
               </svg>
               <div className="card-bottom">

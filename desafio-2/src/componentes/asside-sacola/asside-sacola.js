@@ -85,6 +85,7 @@ export default function AssideSacola({
         {adicionarFilmeSacola.map((filmeSacola) => {
           return (
             <div
+              key={adicionarFilmeSacola.indexOf(filmeSacola)}
               className="filme-sacola"
               style={{
                 display: !sacola || filmeSacola.quantidade === 0 ? "none" : "",
@@ -110,7 +111,7 @@ export default function AssideSacola({
           );
         })}
         <div className="cupom-sacola">
-          <label forHTML="cupom">Insira seu cupom</label>
+          <label forhtml="cupom">Insira seu cupom</label>
           <div className="input-cupom">
             <input
               onKeyPress={(e) => inputDesconto(e)}

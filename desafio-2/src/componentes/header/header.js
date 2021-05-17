@@ -3,7 +3,6 @@ import fotoPerfil from "../assets/images/profile2.jpg";
 import favoritos from "../assets/images/bookmark-icon.svg";
 import Promocoes from "../assets/images/promotion-icon.svg";
 import logo from "../assets/images/logo.svg";
-import { useState} from "react";
 
 export default function Header({
   setNomeFiltroInput,
@@ -39,17 +38,17 @@ export default function Header({
                 cy="6.84448"
                 r="5.99243"
                 stroke="white"
-                stroke-width="1.00001"
-                stroke-linecap="round"
-                stroke-linejoin="round"
+                strokeWidth="1.00001"
+                strokeLinecap="round"
+                strokeLinejoin="round"
               />
               <path
                 opacity="0.4"
                 d="M11.0122 11.3232L13.3616 13.6665"
                 stroke="white"
-                stroke-width="1.00001"
-                stroke-linecap="round"
-                stroke-linejoin="round"
+                strokeWidth="1.00001"
+                strokeLinecap="round"
+                strokeLinejoin="round"
               />
             </svg>
           </button>
