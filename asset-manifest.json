@@ -1,0 +1,39 @@
+{
+  "files": {
+    "main.css": "/cubos-flix/static/css/main.31316229.chunk.css",
+    "main.js": "/cubos-flix/static/js/main.5fa5f024.chunk.js",
+    "main.js.map": "/cubos-flix/static/js/main.5fa5f024.chunk.js.map",
+    "runtime-main.js": "/cubos-flix/static/js/runtime-main.5d901d0c.js",
+    "runtime-main.js.map": "/cubos-flix/static/js/runtime-main.5d901d0c.js.map",
+    "static/js/2.b3e9b7f6.chunk.js": "/cubos-flix/static/js/2.b3e9b7f6.chunk.js",
+    "static/js/2.b3e9b7f6.chunk.js.map": "/cubos-flix/static/js/2.b3e9b7f6.chunk.js.map",
+    "static/js/3.4a5a5891.chunk.js": "/cubos-flix/static/js/3.4a5a5891.chunk.js",
+    "static/js/3.4a5a5891.chunk.js.map": "/cubos-flix/static/js/3.4a5a5891.chunk.js.map",
+    "index.html": "/cubos-flix/index.html",
+    "static/css/main.31316229.chunk.css.map": "/cubos-flix/static/css/main.31316229.chunk.css.map",
+    "static/js/2.b3e9b7f6.chunk.js.LICENSE.txt": "/cubos-flix/static/js/2.b3e9b7f6.chunk.js.LICENSE.txt",
+    "static/media/bag-icon.97386509.svg": "/cubos-flix/static/media/bag-icon.97386509.svg",
+    "static/media/cupom.css": "/cubos-flix/static/media/mobile-bg-promotion.bcea5271.svg",
+    "static/media/bookmark-icon.9f14cfde.svg": "/cubos-flix/static/media/bookmark-icon.9f14cfde.svg",
+    "static/media/closed-menu.99b4e8ca.svg": "/cubos-flix/static/media/closed-menu.99b4e8ca.svg",
+    "static/media/coupon-circle-icon.6a23845a.svg": "/cubos-flix/static/media/coupon-circle-icon.6a23845a.svg",
+    "static/media/coupon-icon.dde4c54a.svg": "/cubos-flix/static/media/coupon-icon.dde4c54a.svg",
+    "static/media/golden-star.a0dee79d.svg": "/cubos-flix/static/media/golden-star.a0dee79d.svg",
+    "static/media/logo.328de4fc.svg": "/cubos-flix/static/media/logo.328de4fc.svg",
+    "static/media/minus-icon.3d879f51.svg": "/cubos-flix/static/media/minus-icon.3d879f51.svg",
+    "static/media/money.e77f81c9.png": "/cubos-flix/static/media/money.e77f81c9.png",
+    "static/media/open-menu.531e1543.svg": "/cubos-flix/static/media/open-menu.531e1543.svg",
+    "static/media/person-illustration.624d0311.svg": "/cubos-flix/static/media/person-illustration.624d0311.svg",
+    "static/media/plus-icon.212e6a8b.svg": "/cubos-flix/static/media/plus-icon.212e6a8b.svg",
+    "static/media/profile2.15459490.jpg": "/cubos-flix/static/media/profile2.15459490.jpg",
+    "static/media/promotion-icon.404378d1.svg": "/cubos-flix/static/media/promotion-icon.404378d1.svg",
+    "static/media/time-icon.d2d02e78.svg": "/cubos-flix/static/media/time-icon.d2d02e78.svg",
+    "static/media/trash-icon.21b4a062.svg": "/cubos-flix/static/media/trash-icon.21b4a062.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.5d901d0c.js",
+    "static/js/2.b3e9b7f6.chunk.js",
+    "static/css/main.31316229.chunk.css",
+    "static/js/main.5fa5f024.chunk.js"
+  ]
+}
